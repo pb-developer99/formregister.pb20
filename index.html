@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+</head>
+<body><center>
+	<h1>Registration Form</h1><br>
+	<form>
+		<label for="First"> First Name: </label>
+		<input name="First" id="first" type="text" required>
+		<label for="Last"> Last Name: </label>
+		<input name="Last" id="last" type="text" required>
+	<div>
+			<label form="Male"> Male: </label>
+			<input id="Male" name="Gender" type="radio" value="Male">
+			<label form="Female"> Female: </label>
+			<input id="Female" name="Gender" type="radio" value="Female">
+			<label form="Other"> Other: </label>
+			<input id="Other" name="Gender" type="radio" value="Other">
+	</div>
+	<div>
+			<label> Email: <input name="Email" type="Email" placeholder="your email" required>
+			</label>
+			<label> Password: <input name="Password" type="Password" Pattern= "{5, 10}" required title=" password must be 5-10 characters">
+			</label>
+	</div>
+	<div>
+		<label> Birthday: <select name="Month">
+			<option> Month </option>
+			<option>January</option>
+			<option>March</option>
+			<option>May</option>
+			<option>July</option>
+			<option>September</option>
+			<option>December</option>
+		</select>
+		<select name="Day">
+			<option> Day </option>
+			<option>5</option>
+			<option>10</option>
+			<option>15</option>
+			<option>20</option>
+			<option>25</option>
+			<option>30</option>
+		</select>
+
+<select name="Year">
+			<option> Year </option>
+			<option>1990</option>
+			<option>1995</option>
+			<option>1996</option>
+			<option>1997</option>
+			<option>1998</option>
+			<option>1999</option>
+		</select>
+        </label>
+</div>
+<div>
+	<label for="Agreed"> I agree to terms and conditions: <input id="agreed" name="agreed" type="checkbox">
+    </label>
+</div><br>
+    <button class="btn btn-success btn-s">Submit</button>
+</form>
+<script type="text/javascript" src="form.js"></script>
+</center>
+</body>
+</html>
